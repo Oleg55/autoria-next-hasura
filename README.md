@@ -6,8 +6,7 @@ docker-compose up -d
 cd hasura/metadata
 hasura metadata export
 hasura migrate create "init" --from-server --database-name default
-cd ..
-cd ..
+cd ../..
 git add .
 git status 
 git  commit -m "some commit"
