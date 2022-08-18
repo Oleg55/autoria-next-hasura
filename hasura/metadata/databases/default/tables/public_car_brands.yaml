@@ -1,0 +1,11 @@
+table:
+  name: car_brands
+  schema: public
+array_relationships:
+  - name: car_models
+    using:
+      foreign_key_constraint_on:
+        column: brand_id
+        table:
+          name: car_models
+          schema: public
