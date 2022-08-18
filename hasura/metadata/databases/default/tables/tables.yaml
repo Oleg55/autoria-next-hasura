@@ -1,2 +1,3 @@
 - "!include public_car_brands.yaml"
 - "!include public_car_models.yaml"
+- "!include public_car_spec_model.yaml"
