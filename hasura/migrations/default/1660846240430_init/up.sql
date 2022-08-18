@@ -21,12 +21,12 @@ CREATE TABLE IF NOT EXISTS public.car_types (
 );
 COMMENT ON TABLE public.car_types IS 'car types';
 ALTER TABLE ONLY public.car_brands
-    ADD CONSTRAINT car_brands_pkey PRIMARY KEY (id);
+    ADD CONSTRAINT IF NOT EXISTS car_brands_pkey PRIMARY KEY (id);
 ALTER TABLE ONLY public.car_models
-    ADD CONSTRAINT car_models_pkey PRIMARY KEY (id);
+    ADD CONSTRAINT IF NOT EXISTS car_models_pkey PRIMARY KEY (id);
 ALTER TABLE ONLY public.car_spec_model
-    ADD CONSTRAINT car_spec_model_pkey PRIMARY KEY (id);
+    ADD CONSTRAINT IF NOT EXISTS car_spec_model_pkey PRIMARY KEY (id);
 ALTER TABLE ONLY public.car_types
-    ADD CONSTRAINT car_types_pkey PRIMARY KEY (id);
+    ADD CONSTRAINT IF NOT EXISTS car_types_pkey PRIMARY KEY (id);
 ALTER TABLE ONLY public.car_models
-    ADD CONSTRAINT car_models_brand_id_fkey FOREIGN KEY (brand_id) REFERENCES public.car_brands(id) ON UPDATE RESTRICT ON DELETE RESTRICT;
+    ADD CONSTRAINT IF NOT EXISTS car_models_brand_id_fkey FOREIGN KEY (brand_id) REFERENCES public.car_brands(id) ON UPDATE RESTRICT ON DELETE RESTRICT;
