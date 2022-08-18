@@ -1,0 +1,3 @@
+table:
+  name: cars_models
+  schema: public
