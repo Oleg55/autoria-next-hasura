@@ -11,4 +11,5 @@ cd ../..
 git add .
 git status 
 git  commit -m "some commit"
-git push
+git push 
+<!-- go to https://github.com/Oleg55/autoria-next-hasura/tree/development and open pull request  --> 
