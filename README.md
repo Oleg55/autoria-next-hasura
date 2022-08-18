@@ -7,6 +7,8 @@ cd hasura
 cd metadata
 hasura metadata export
 cd ..
+cd ..
 git add .
+git status 
 git  commit -m "some commit"
-git push
+git push 
