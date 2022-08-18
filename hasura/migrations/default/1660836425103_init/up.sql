@@ -1,11 +1,11 @@
 SET check_function_bodies = false;
 CREATE TABLE public.car_brands (
-    id uuid DEFAULT public.gen_random_uuid() NOT NULL,
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
     brand text NOT NULL
 );
 COMMENT ON TABLE public.car_brands IS 'car brands';
 CREATE TABLE public.car_models (
-    id uuid DEFAULT public.gen_random_uuid() NOT NULL,
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
     model text NOT NULL,
     brand_id uuid NOT NULL
 );
