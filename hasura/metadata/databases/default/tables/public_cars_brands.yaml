@@ -1,3 +1,13 @@
 table:
   name: cars_brands
   schema: public
+object_relationships:
+  - name: brand_with_model
+    using:
+      manual_configuration:
+        column_mapping:
+          name: model
+        insertion_order: null
+        remote_table:
+          name: cars_models
+          schema: public
