@@ -1,0 +1,3 @@
+table:
+  name: car_year
+  schema: public
