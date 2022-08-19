@@ -1,0 +1,13 @@
+SET check_function_bodies = false;
+INSERT INTO public.car_brands (id, brand) VALUES ('20944034-99d3-48be-801e-1a8e0953f0a4', 'BMW');
+INSERT INTO public.car_brands (id, brand) VALUES ('4c0af096-5188-4931-b531-5afc82225c00', 'AUDI');
+INSERT INTO public.car_models (id, model, brand_id) VALUES ('f1afa619-bb45-4bda-99d5-2fcc116db0f0', 'Series 1', '20944034-99d3-48be-801e-1a8e0953f0a4');
+INSERT INTO public.car_models (id, model, brand_id) VALUES ('6c4c5da5-c70a-4bfe-9f8a-e92d8aef98cb', 'Series 2', '20944034-99d3-48be-801e-1a8e0953f0a4');
+INSERT INTO public.car_models (id, model, brand_id) VALUES ('a849c565-cddd-4c61-8cd9-38e46a49aed9', 'Series 3', '20944034-99d3-48be-801e-1a8e0953f0a4');
+INSERT INTO public.car_models (id, model, brand_id) VALUES ('4ee04446-dbb8-4df1-aed1-87529c06a7ae', 'Series 4', '20944034-99d3-48be-801e-1a8e0953f0a4');
+INSERT INTO public.car_models (id, model, brand_id) VALUES ('1c1acda6-57a3-4664-9d5b-898b563d97ac', 'Series 5', '20944034-99d3-48be-801e-1a8e0953f0a4');
+INSERT INTO public.car_models (id, model, brand_id) VALUES ('82e537cf-89a7-4d2c-9b5c-0232bbc835c9', 'Series 6', '20944034-99d3-48be-801e-1a8e0953f0a4');
+INSERT INTO public.car_models (id, model, brand_id) VALUES ('5bb47235-9b41-446d-a670-e83f2e34c019', 'Series 7', '20944034-99d3-48be-801e-1a8e0953f0a4');
+INSERT INTO public.car_spec_model (id, spec_model, models_id) VALUES ('1f4bccfc-71eb-44d7-886d-a38743d8444b', '320d', 'a849c565-cddd-4c61-8cd9-38e46a49aed9');
+INSERT INTO public.car_types (id, type) VALUES ('58d7fad8-9fda-477e-a58a-dd3ccbc472d7', 'wagon');
+INSERT INTO public.car_year (id, year) VALUES ('d5993df2-81b1-489c-a58d-fcbb6c17c069', 2002);
