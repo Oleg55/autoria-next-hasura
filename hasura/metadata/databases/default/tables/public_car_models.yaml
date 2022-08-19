@@ -5,3 +5,11 @@ object_relationships:
   - name: car_brand
     using:
       foreign_key_constraint_on: brand_id
+array_relationships:
+  - name: car_spec_models
+    using:
+      foreign_key_constraint_on:
+        column: models_id
+        table:
+          name: car_spec_model
+          schema: public
