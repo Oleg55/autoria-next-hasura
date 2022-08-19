@@ -26,4 +26,4 @@ hasura metadata export --endpoint https://autorianext.hasura.app --admin-secret 
 
 <!-- migrations applied -->
 
-hasura migrate apply --skip-execution --version 1660846240430 --endpoint https://autorianext.hasura.app --admin-secret VyxjuI9zLQVx5pa15banWW6Wpf4QiBTxthEoxizNeYsDFOVX16sNiETpIPzvrqEd
+hasura migrate apply --skip-execution --version 1660846240430 --endpoint https://autorianext.hasura.app --admin-secret VyxjuI9zLQVx5pa15banWW6Wpf4QiBTxthEoxizNeYsDFOVX16sNiETpIPzvrqEd 
