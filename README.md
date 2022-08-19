@@ -2,6 +2,8 @@
 
 docker-compose up -d
 
+hasura console
+
 <!-- push to github -->
 cd hasura/metadata
 hasura metadata export
@@ -13,3 +15,15 @@ git status
 git  commit -m "some commit"
 git push 
 <!-- go to https://github.com/Oleg55/autoria-next-hasura/tree/development and open pull request  --> 
+
+<!-- создать файл миграции с прода хасуры -->
+hasura migrate create "init" --from-server --endpoint https://autorianext.hasura.app --admin-secret VyxjuI9zLQVx5pa15banWW6Wpf4QiBTxthEoxizNeYsDFOVX16sNiETpIPzvrqEd
+
+<!-- получаем металанны  с прода хасуры -->
+
+hasura metadata export --endpoint https://autorianext.hasura.app --admin-secret VyxjuI9zLQVx5pa15banWW6Wpf4QiBTxthEoxizNeYsDFOVX16sNiETpIPzvrqEd
+
+
+<!-- migrations applied -->
+
+hasura migrate apply --skip-execution --version 1660846240430 --endpoint https://autorianext.hasura.app --admin-secret VyxjuI9zLQVx5pa15banWW6Wpf4QiBTxthEoxizNeYsDFOVX16sNiETpIPzvrqEd
