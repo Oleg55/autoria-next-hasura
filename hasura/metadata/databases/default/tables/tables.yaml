@@ -5,3 +5,4 @@
 - "!include public_car_spec_model.yaml"
 - "!include public_car_types.yaml"
 - "!include public_car_year.yaml"
+- "!include public_users_cars.yaml"
