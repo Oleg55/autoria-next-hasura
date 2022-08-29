@@ -1,3 +1,6 @@
+<!-- hasura lessons 
+https://coursehunter.net/course/proizvoditelnyy-bekend-graphql-vmeste-s-hasura?lesson=1 -->
+
 <!-- development -->
 
 docker-compose up -d
@@ -33,7 +36,7 @@ git push
 <!-- create seed -->
 <!-- use this command in hasura folder "cd hasura"-->
 
-hasura seed create tables_seed --from-table car_brands --from-table car_engine --from-table car_models --from-table car_price --from-table car_spec_model --from-table car_types --from-table car_year 
+hasura seed create tables_seed --from-table car_brands --from-table car_engine --from-table car_models --from-table car_price --from-table car_spec_model --from-table car_types --from-table car_year --from-table users_cars
 
 <!-- push seed to prod -->
 hasura seed apply --file 1660904435481_tables_seed.sql --database-name default --endpoint https://autorianext.hasura.app
